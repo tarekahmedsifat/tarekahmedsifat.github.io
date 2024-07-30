@@ -199,7 +199,6 @@ body {
         overflow: hidden;
     }
     .navbar ul li{
-        width: 100%;
         display: block;
     }
     .navbar ul li a{
