@@ -14,6 +14,7 @@
     font-size: 26px;
     font-weight: bold;
     user-select: none;
+    cursor: pointer;
 }
 
 .menu-toggle{
@@ -45,7 +46,14 @@
     transform: scale(1.1);
 }
 
-
+@media (max-width: 720px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+/*        gap: 20px;*/
+        padding-bottom: 30px
+    }
+}
 
 @media (max-width: 530px){
     .navbar{

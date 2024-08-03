@@ -7,7 +7,6 @@ body {
 }
 
 
-
 .main {
     display: flex;
     align-items: center;
@@ -39,7 +38,7 @@ body {
 }
 
 .main-detil p {
-    font-size: 22px;
+    font-size: 18px;
     text-align: left;
     margin-bottom: 5px;
 }
@@ -114,14 +113,6 @@ body {
     }
 }
 
-@media (max-width: 720px){
-    .navbar{
-        flex-direction: column;
-        justify-content: center;
-/*        gap: 20px;*/
-        padding-bottom: 30px
-    }
-}
 
 @media(max-width: 660px){
     .main{

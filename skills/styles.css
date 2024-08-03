@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --h: 212deg;
+    --l: 43%;
+    --brandColor: hsl(var(--h), 71%, var(--l));
+}
+
+.main p {
+    margin: 0;
+    line-height: 1.0;
+/*    user-select: none;*/
+}
+.despcription{
+    text-align: justify !important;
+    padding: 10px;
+}
+
+.main ol {
+    list-style: none;
+    counter-reset: list;
+    padding: 0 1rem;
+}
+
+.main li {
+    --stop: calc(100% / var(--length) * var(--i));
+    --l: 62%;
+    --l2: 88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: hsl(var(--h), 71%, var(--l));
+    --c2: hsl(var(--h), 71%, var(--l2));
+    
+    position: relative;
+    counter-increment: list;
+    max-width: 45rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+/*    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);*/
+    box-shadow: 10px 10px 34px -7px rgba(6,57,112,0.75);
+    -webkit-box-shadow: 10px 10px 34px -7px rgba(6,57,112,0.75);
+    -moz-box-shadow: 10px 10px 34px -7px rgba(6,57,112,0.75);
+    border-radius: 0.35rem;
+    overflow: hidden;
+    background-color: #384d63;
+    color: #abdbe3;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    user-select: none;
+}
+
+.main li::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+.main li:hover{
+    transform: translateX(20px);
+    box-shadow: 10px 10px 33px 1px rgba(6,57,112,0.75);
+    -webkit-box-shadow: 10px 10px 33px 1px rgba(6,57,112,0.75);
+    -moz-box-shadow: 10px 10px 33px 1px rgba(6,57,112,0.75);
+    transition: all 200ms ease-in-out;
+}
+
+.main h3 {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem;
+/*    color: rgb(70 70 70);*/
+    color: #abdbe3;
+}
+
+.main h3::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    content: counter(list);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--c1);
+    color: white;
+}
+
+@media (min-width: 40em) {
+    .main li {
+        margin: 3rem auto;
+        padding: 2rem 2rem 2rem;
+    }
+    
+    .main h3 {
+        font-size: 2.0rem;
+        margin: 0 0 1rem;
+    }
+    
+    .main h3::before {
+        margin-right: 1.0rem;
+    }
+}
+@media (max-width: 720px){
+    .main li:hover{
+        transform: scale(1.05) !important;
+        transition: all 200ms ease-in-out;
+    }
+}
