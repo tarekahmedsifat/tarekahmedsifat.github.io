@@ -1,11 +1,15 @@
 * {
-    box-sizing: border-box;
+/*     box-sizing: border-box; */
 }
 
 body {
     --h: 212deg;
     --l: 43%;
     --brandColor: hsl(var(--h), 71%, var(--l));
+}
+
+.main * {
+    box-sizing: border-box;
 }
 
 .main p {
