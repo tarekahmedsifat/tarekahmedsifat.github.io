@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Talk with me</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-	<link rel="stylesheet" href="../nav.css">
-    <link rel="stylesheet" href="../styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body onload="document.body.style.opacity='1'">
-	<nav class="navbar">
+    <nav class="navbar">
         <div class="navbar-brand">Skars</div>
         <button type="button" class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
         <ul class="navbar-links">
@@ -19,10 +19,48 @@
             <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
-
-    <section class="main">
-        <h4 align="center">Site is not fully upgraded. This is under maintenance.</h4>
+    <section class="wrapper">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Knock me here...</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" placeholder="Your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" placeholder="Phone #">
+                    </div>
+                    <div class="input-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" placeholder="Company name">
+                    </div>
+                    <div class="input-group full-width">
+                        <label for="message">Message *</label>
+                        <textarea id="message" placeholder="Write your message" required></textarea>
+                    </div>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, magnam!</p>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> Dhaka, Bangladesh</li>
+                    <li><i class="fa fa-phone"></i> +88 01317****39</li>
+                    <li><i class="fa fa-envelope"></i> tarekahmed1434@gmail.com</li>
+                    <li><i class="fa fa-github"></i> @tarekahmedsifat</li>
+                    <li><i class="fa fa-linkedin"></i> @tarekahmedsifat</li>
+                    <li><i class="fa fa-facebook"></i> @tarekahmedsifat</li>
+                </ul>
+            </div>
+        </div>
     </section>
-	
+    <script type="text/javascript" src="/script.js"></script>
 </body>
 </html>
