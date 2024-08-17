@@ -1,0 +1,119 @@
+/* Basic Reset */
+
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+.main{
+    padding: 10px !important;
+}
+
+.wrapper{
+    width: 100%;
+}
+.wrapper * {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right, #121C84, #8278DA);
+    color: white;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid #005689;
+    background: #fafafa;
+    border-radius: 5px;
+    position: relative;
+}
+
+.timeline-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding: 1rem;
+    }
+
+    .timeline-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 540px){
+    header h1{
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 460px){
+    header h1{
+        font-size: 25px;
+    }
+    header p{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 380px){
+    header{
+        padding: 1rem !important;
+    }
+    header h1{
+        font-size: 22px;
+    }
+    header p{
+        font-size: 14px;
+    }
+}
+
