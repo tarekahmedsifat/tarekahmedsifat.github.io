@@ -62,5 +62,19 @@
         </div>
     </section>
     <script type="text/javascript" src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        let form = document.querySelector("form");
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            Swal.fire({
+              title: "Oops!",
+              text: "I am sorry to say our messaging service is currently unavailable. You can contact me through email.",
+              icon: "info",
+              confirmButtonColor: "#3085d6",
+              confirmButtonText: "OKAY"
+            });
+        })
+    </script>
 </body>
 </html>
